@@ -1,7 +1,8 @@
 require 'rails_form_builder_param_name/field_param_name_tag'
 
 module RailsFormBuilderParamName
-  module FieldParamNameHelper
+  module FieldParamNameHelper # :nodoc:
+    
     # Returns the parameter name that Rails form helpers will generate for a given method.
     # For example:
     #

@@ -11,11 +11,19 @@ class RailsFormBuilderParamNameTest < ActionView::TestCase
   end
 
   def test_form_builder_works
-    assert_rendered_text_equal "user[birth_date]", "<%= form_for :user, url: 'fakeurl' do |f| %><%= f.field_param_name :birth_date %><% end %>"
-    assert_rendered_text_equal "user[roles][]", "<%= form_for :user, url: 'fakeurl' do |f| %><%= f.field_param_name :roles, multiple: true %><% end %>"
+    assert_rendered_text_equal(
+      "user[birth_date]", 
+      "<%= form_for :user, url: 'fakeurl' do |f| %><%= f.field_param_name :birth_date %><% end %>"
+    )
+    
+    assert_rendered_text_equal(
+      "user[roles][]", 
+      "<%= form_for :user, url: 'fakeurl' do |f| %><%= f.field_param_name :roles, multiple: true %><% end %>"
+    )
   end
   
   private
+  
   def assert_rendered_text_equal(text, template)
     html = render(inline: template)
     assert_equal text, Nokogiri::HTML.parse(html).text
