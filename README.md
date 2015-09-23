@@ -1,4 +1,4 @@
-# RailsFormBuilderParamName
+# rails_form_builder_param_name
 
 Written by Nat Budin.  Copyright &copy; 2015 PatientsLikeMe, Inc.  Released under the MIT license.
 
