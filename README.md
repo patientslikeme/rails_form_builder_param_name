@@ -1,5 +1,7 @@
 # RailsFormBuilderParamName
 
+Written by Nat Budin.  Copyright &copy; 2015 PatientsLikeMe, Inc.  Released under the MIT license.
+
 This gem is a horrid, but small and self-contained, hack.  It adds a method to Rails' global helpers, and a corresponding method in `FormBuilder`, called `field_param_name`.  This method returns the value of the `name` attribute on fields that the Rails form helpers would hypothetically generate if you were to call them.
 
 ## Installation
