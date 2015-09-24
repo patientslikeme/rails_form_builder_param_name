@@ -1,0 +1,19 @@
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------
+RailsFormBuilderParamNameTest: test_form_builder_works
+------------------------------------------------------
+  Rendered inline template (1.3ms)
+  Rendered inline template (0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+RailsFormBuilderParamNameTest: test_form_helper_works
+-----------------------------------------------------
+  Rendered inline template (0.2ms)
+  Rendered inline template (0.2ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+RailsFormBuilderParamNameTest: test_that_it_has_a_version_number
+----------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
